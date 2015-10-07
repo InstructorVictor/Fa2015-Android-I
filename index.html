@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+    
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+</head>
+<body>
+    
+<!-- Home -->
+<section data-role="page" data-title="Home" id="home">
+    <header data-theme="a" data-role="header" data-position="fixed">
+        <h1>
+            mySDCE
+        </h1>
+        <nav data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-prefetch="true" data-transition="flip" data-icon="home" class="ui-btn-active ui-state-persist ui-state-disabled">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#art" data-prefetch="true" data-transition="flip" data-icon="grid">
+                        Art
+                    </a>
+                </li>
+                <li>
+                    <a href="#pc" data-prefetch="true" data-transition="flip" data-icon="gear">
+                        PC
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+	<article role="main" class="ui-content">
+        <h2>
+            Welcome<span class="nameMsg"></span>
+        </h2>
+		<p>
+			Our mission is to provide ongoing learning opportunities, preparing diverse individuals for career advancement, a college education, or enriched lives through good health and personal fulfillment.
+		</p>
+		<div class="divImgCrop">
+			<img src="images/hsbanner.jpg">
+		</div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+				<a href="#about" data-role="button" data-icon="info" data-transition="pop">About</a>
+            </div>
+            <div class="ui-block-b">
+            </div>
+        </div>
+    </article>
+	<footer data-theme="a" data-role="footer" data-position="fixed">
+		<h4>
+            Copyright &copy; 2015
+        </h4>
+    </footer>
+</section><!-- End of HOME section -->
+<section data-role="page" data-title="Art" id="art">
+	<aside data-role="panel" data-display="overlay" id="artCal">
+		<div class="closeBtnRight">
+			<a  href="#art" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext">Close Panel</a>
+		</div>
+		<h1>August</h1>
+			<ul>
+				<li>Student Show</li>
+				<li>Fund raiser</li>
+			</ul>
+		<h2>September</h2>
+			<ul>
+				<li>Teacher's Show</li>
+				<li>Fund raiser II</li>
+			</ul>
+		<h3>October</h3>
+			<ul>
+				<li>How to Paint Seminar</li>
+				<li>Fund raiser III</li>
+			</ul>
+	</aside>
+	    <header data-theme="a" data-role="header" data-position="fixed">
+        <h1>
+            Art Classes
+        </h1>
+        <nav data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-prefetch="true" data-transition="flip" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#art" data-prefetch="true" data-transition="flip" data-icon="grid" class="ui-btn-active ui-state-persist ui-state-disabled">
+                        Art
+                    </a>
+                </li>
+                <li>
+                    <a href="#pc" data-prefetch="true" data-transition="flip" data-icon="gear">
+                        PC
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+	<article role="main" class="ui-content">
+		<h2>Learn art<span class="nameMsg"></span></h2>
+		<div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>
+                    ART 101
+                </h3>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    ART 102
+                </h3>
+            </div>
+            <div data-role="collapsible">
+                <h3>
+                    ART 103
+                </h3>
+            </div>
+        </div>
+		<div class="ui-grid-a gridAlignCenter">
+            <div class="ui-block-a">
+				<a href="#artCal" data-role="button" data-icon="calendar" data-inline="true">Calendar</a>
+            </div>
+            <div class="ui-block-b">
+				<a href="http://sdce.edu" rel="external" target="_blank" data-role="button" data-icon="star" data-inline="true">Catalog</a>
+            </div>
+        </div>
+	</article>
+	<footer data-theme="a" data-role="footer" data-position="fixed">
+        <h4>
+            Copyright &copy; 2015
+        </h4>
+    </footer>
+</section><!-- End of #art section -->
+<section data-role="page" data-title="PC" id="pc">
+    <header data-theme="a" data-role="header" data-position="fixed">
+        <h1>
+            PC Classes
+        </h1>
+        <nav data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#home" data-prefetch="true" data-transition="flip" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#art" data-prefetch="true" data-transition="flip" data-icon="grid">
+                        Art
+                    </a>
+                </li>
+                <li>
+                    <a href="#pc" data-prefetch="true" data-transition="flip" data-icon="gear" class="ui-btn-active ui-state-persist ui-state-disabled">
+                        PC
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+	<article role="main" class="ui-content">
+		<h2>Take PC classes<span class="nameMsg"></span></h2>
+		<ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Basic PC Classes
+            </li>
+            <li>
+                <a href="#basCom" data-transition="slide">
+                    COM101 - Intro
+                </a>
+            </li>
+            <li data-role="list-divider" role="heading">
+                Intermediate PC Classes
+            </li>
+            <li>
+                <a href="#intCom" data-transition="slide">
+                    COM201 - Windows
+                </a> 
+            </li>
+            <li>
+                <a href="#intCom" data-transition="slide">
+                    COM202 - Mac OS
+                </a>
+            </li>
+			<li data-role="list-divider" role="heading">
+				Advanced PC Classes
+			</li>
+			<li>
+				<a href="#advCom" data-transition="slide">
+					COM301 - Linux
+				</a>
+			</li>
+        </ul>
+	</article>
+	<footer data-theme="a" data-role="footer" data-position="fixed">
+        <h4>
+            Copyright &copy; 2015
+        </h4>
+    </footer>
+</section>
+	<section data-role="page" id="basCom">
+		<header data-role="header" data-add-back-btn="true">
+			<h1>Basic</h1>
+		</header>
+		<article role="main" class="ui-content">
+			<h2>Learn Computer Basics</h2>
+		</article>
+	</section>
+	<section data-role="page" id="intCom">
+		<header data-role="header" data-add-back-btn="true">
+			<h1>Intermediate</h1>
+		</header>
+		<article role="main" class="ui-content">
+			<h2>Learn Intermediate Computers</h2>
+		</article>
+		
+	</section>
+	<section data-role="page" id="advCom">
+		<header data-role="header" data-add-back-btn="true">
+			<h1>Advanced</h1>
+		</header>
+		<article role="main" class="ui-content">
+			<h2>Learn Advanced Computers</h2>
+		</article>
+	</section>
+	<section data-role="page" data-dialog="true" id="about">
+		<header data-role="header">
+			<h1>About</h1>
+		</header>
+		<article role="main" class="ui-content">
+			<div class="divCenter">
+				<img src="images/ce-logo-vert.png">
+				<p>San Diego Continuing Education is committed to lkdjflkdjflkdfjlk</p>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="dir.html" rel="external" data-role="button" data-icon="navigation" data-inline="true">Map</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="#" data-role="button" data-icon="user" data-inline="true" id="btnCustomize">Customize</a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+  <!-- jQuery and jQuery Mobile -->
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+  <!-- Extra Codiqa features -->
+  <script src="codiqa.ext.js"></script>
+  <script>
+	loadName();
+  </script>
+  <!-- 
+	Android App Dev w/ HTLM5 - Part I
+	vcampos@sdccd.edu
+	2015-10-01
+  -->
+</body>
+</html>
